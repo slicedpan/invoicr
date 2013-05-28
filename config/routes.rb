@@ -7,6 +7,8 @@ Invoicr::Application.routes.draw do
 
   get 'test' => 'test#test'
   get 'test2' => 'test#test2'
+  
+  resources :clients
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
