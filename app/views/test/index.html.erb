@@ -1,10 +1,31 @@
-<div class="json_root">
-    <div>
-        <p class="json_object" key="thing">
-        <div class="json_array_container" key="array"></p>
-            <div class="json_array_item">
-                <p class="json_array_value"></p>
-            </div>
+<div id="jamb_root_one" class="jamb_node" jamb-type="map" >
+    <p class="jamb_node" jamb-type="leaf"key="thing"></p>
+    <p class="jamb_node" jamb-type="leaf" key="another thing"></p>
+    <div class="jamb_node" jamb-type="array" key="array">
+        <div class="jamb_node" jamb-type="array_item" >
+            <p>Title</p>
+            <p class="jamb_node" jamb-type="leaf"></p>
         </div>
     </div>
 </div>
+<button class="btn" id="btn_one">Click Me</button>
+<div id="jamb_root_two" class="jamb_node" jamb-type="map" >
+    <div class="jamb_node" jamb-type="map" key="obj">
+        <p class="jamb_node" jamb-type="leaf" key="field_one"></p>
+        <div class="jamb_node" jamb-type="object" key="field_two">
+            <p class="jamb_node" jamb-type="leaf" key="thing"></p>
+            <p class="jamb_node" jamb-type="leaf" key="thing2"></p>
+        </div>
+        <p class="jamb_node" jamb-type="leaf" key="obj2"></p>
+    </div>
+</div>
+<button class="btn" id="btn_two">Click Me</button>
+<script>
+    $(function() {
+        var jamb_one = new Jamb($(#btn_one));
+        $(#btn_one).click(function() {jamb_one.load(test);});
+        var jamb_two = new Jamb($(#btn_two));
+        $(#btn_two).click(function() {jamb_two.load(test2);});
+    
+    });
+</script>
