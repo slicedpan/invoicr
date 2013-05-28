@@ -1,0 +1,3 @@
+class Client < ActiveRecord::Base
+  attr_accessible :address, :email, :id, :name, :user_id
+end
