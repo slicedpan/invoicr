@@ -5,11 +5,11 @@ class ClientsController < ApplicationController
   include UserAuth::ControllerMixin
 
   def index
+    @clients = Client.all
     if !user_logged_in?
         puts "user not logged in"
         redirect_to root_path and return
     end
-    @clients = Client.where(:user_id => @user.id)
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @clients }

@@ -6,7 +6,7 @@
 development:
   adapter: mysql2
   database: invoicr
-  username: invoicr
+  user: invoicr
   password: adu8Jedo
   pool: 5
   timeout: 5000

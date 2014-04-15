@@ -1,0 +1,7 @@
+\documentclass[11pt]{report}
+
+\usepackage{opensans}
+
+\begin{document}
+<%= yield %>
+\end{document}

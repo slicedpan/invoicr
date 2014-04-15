@@ -1,0 +1,14 @@
+                CREATE TABLE `users` (
+                  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+                  `password_salt` varchar(32) DEFAULT NULL,
+                  `password_hash` varchar(64) DEFAULT NULL,
+                  `username` text DEFAULT NULL,
+                  `email` text DEFAULT NULL,
+                  `user_data` longblob,
+                  PRIMARY KEY (`user_id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+               -- CREATE TABLE `sessions` (
+               --   `session_id` varchar(32) NOT NULL,
+               --   `session_data` longblob,
+               --   PRIMARY KEY (`session_id`)
+               -- ) ENGINE=InnoDB DEFAULT CHARSET=utf8$$

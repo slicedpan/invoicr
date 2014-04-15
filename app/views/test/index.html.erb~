@@ -1,5 +1,5 @@
 
-<%= render_alert %>
+<%= UserAuth.render_alert %>
 <%= form_tag(login_path, :method => "post") do %>
     <fieldset>
         <legend>Login</legend>

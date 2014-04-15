@@ -50,6 +50,4 @@ class @JambNode
                 ++counter
         else if @type == @Map
             for key, value of data
-                key
-        
                 

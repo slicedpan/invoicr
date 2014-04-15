@@ -9,8 +9,6 @@ Invoicr::Application.routes.draw do
   
   get 'logout' => 'clients#logout'
   post 'login' => 'clients#login'
-  
-  get 'invoice' => 'invoice#invoice'
 
   get 'test' => 'test#test'
   get 'test2' => 'test#test2'  

@@ -1,7 +1,5 @@
 class TestController < ApplicationController
 
-    include UserAuth::ControllerMixin
-
     respond_to :json, :html
 
     def index
